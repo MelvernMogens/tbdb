@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truffle Belly Ciputat Database</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('assets/af1qipnlwbieuovobylgho8kaz7mlysvl9ow5bnqwahp.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url('assets/logo.png');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+            border: 3px solid #ffffff;
+        }
+        .title-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 40px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #D2691E; /* Match the brownish-orange from the image */
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #A0522D; /* Darker shade for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-picture"></div>
+    <div class="title-container"><div class="title">Truffle Belly Ciputat Database</div></div>
+    <div>‎ </div>
+    <div class="button-container">
+        <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/1LNmLsadqbmnrG4MiPb-7oImP4kSMxH9_NvvDoTRE69A/edit?usp=sharing')">Stock Opname</button>
+        <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/1KRbft4jH4jC57yGFus4QJF1zpkoHWuHXp_107NZKA8s/edit?usp=sharing')">Petty Cash</button>
+        <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/1AahQCcpzf4aPxaMi68OnTJoc_d5qnYW8zMTJzHWaue8/edit?usp=sharing')">Laporan Harian</button>
+        <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/1E5e0FBntICxkbgVi1PSpdR_CLzdYEJ5fL7HXZ4ErDgg/edit?usp=sharing')">Buku Kas</button>
+    </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
