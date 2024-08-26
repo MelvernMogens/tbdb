@@ -23,8 +23,10 @@
             text-align: center;
         }
         .profile-picture {
-            width: 170px;
-            height: 150px;
+            width: 15vw;
+            height: 15vw;
+            max-width: 170px;
+            max-height: 150px;
             border-radius: 50%;
             background-image: url('assets/profile.jpg');
             background-size: cover;
@@ -33,12 +35,12 @@
             border: 3px solid #ffffff;
         }
         .title-container {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2vw;
             border-radius: 10px;
         }
         .title {
-            font-size: 36px; 
+            font-size: 2vw;
             font-family: 'Nerko One', cursive;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             color: white;
@@ -46,32 +48,33 @@
 
         .button-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            padding: 20px;
+            grid-template-columns: repeat(2, 1fr); /* 2x2 Grid */
+            gap: 2vw;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2vw;
             border-radius: 10px;
+            width: 80vw;
+            max-width: 800px;
         }
         button {
-            padding: 20px 40px;
-            font-size: 40px;
+            padding: 3vw 2vw;
+            font-size: 2vw;
             cursor: pointer;
             border: none;
             font-family: 'Nerko One', cursive;
             border-radius: 5px;
-            background-color: #D2691E; /* Match the brownish-orange from the image */
+            background-color: #D2691E;
             color: white;
             transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #A0522D; /* Darker shade for hover effect */
+            background-color: #A0522D;
         }
     </style>
 </head>
 <body>
     <div class="profile-picture"></div>
     <div class="title-container"><div class="title">Truffle Belly Ciputat Database</div></div>
-    <div>‎ </div>
     <div class="button-container">
         <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/1LNmLsadqbmnrG4MiPb-7oImP4kSMxH9_NvvDoTRE69A/edit?usp=sharing')">Stock Opname</button>
         <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/196ROhKuzIV3L8jJrlVANVFMxn59M2f7T4EVqNG-R0-g/edit?usp=sharing')">Stock Keluar</button>
@@ -79,7 +82,6 @@
         <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/1A3vsV9LJEHDX1NXS6yXIOEMJotyifKT2pqLJXnb55Pw/edit?usp=sharing')">Laporan Pengeluaran</button>
         <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/1KRbft4jH4jC57yGFus4QJF1zpkoHWuHXp_107NZKA8s/edit?usp=sharing')">Petty Cash</button>
         <button onclick="redirectTo('https://docs.google.com/spreadsheets/d/1E5e0FBntICxkbgVi1PSpdR_CLzdYEJ5fL7HXZ4ErDgg/edit?usp=sharing')">Buku Kas</button>
-
     </div>
 
     <script>
